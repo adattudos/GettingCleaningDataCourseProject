@@ -107,11 +107,11 @@ write.table(tidy, file=tidyFile)
 
 # Generate the CodeBook
 
-codebook <- data.frame(variable = names(tidy),
-                       data.frame(description = as.character(names(tidy)),
-                                  stringsAsFactors=FALSE))
-codebook[1, 2] <- "Activity description: Factor w/ 6 levels \"walking\",\"walking upstairs\", \"walking downstairs\", \"sitting\", \"stanting\", \"laying\""
-codebook[2, 2] <- "An identifier of the subject who carried out the experiments"
-for (i in 3:88) { codebook[i, 2] <- paste("Aggregated mean value of variable", codebook[i, 2])}
+#codebook <- data.frame(variable = names(tidy),
+#                       data.frame(description = as.character(names(tidy)),
+#                                  stringsAsFactors=FALSE))
+#codebook[1, 2] <- "Activity description: Factor w/ 6 levels \"walking\",\"walking upstairs\", \"walking downstairs\", \"sitting\", \"stanting\", \"laying\""
+#codebook[2, 2] <- "An identifier of the subject who carried out the experiments"
+#for (i in 3:88) { codebook[i, 2] <- paste("Aggregated mean value of variable", codebook[i, 2])}
 
-write.table(codebook, file="CodeBook.md", row.names=FALSE)
+#write.table(codebook, file="CodeBook.md", row.names=FALSE)
