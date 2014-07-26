@@ -63,8 +63,8 @@ Therefore the Tidy Data Set consitsts of the mean and standard deviation measure
 ### The Tidy Data Set includes the following files
 
 * 'README.md': This file
-* 'CodeBook.md': Shows information about the variables used in the Tidy Data Set.
-* 'run_analysis.R': R script which can reproduce tidy.txt step by step including comments.
+* [a 'CodeBook.md'](https://github.com/adattudos/GettingCleaningDataCourseProject/blob/master/CodeBook.R): Shows information about the variables used in the Tidy Data Set.
+* [a 'run_analysis.R'](https://github.com/adattudos/GettingCleaningDataCourseProject/blob/master/run_analysis.R): R script which can reproduce tidy.txt step by step including comments.
 * 'tidy.txt': The Tidy Data Set exported to txt file with write.table including header (uploaded to Coursera)
 
 ### Notes
@@ -81,6 +81,7 @@ and replacement were used to make them more descriptive.
 * It follows the steps outlined in the Course Project description
 * It can download the Input Data Set for convenience if required
 * It includes a few check calculations for testing in comments
+* It can also produce the CodeBook as exported by write.table
 
 ## References
 
