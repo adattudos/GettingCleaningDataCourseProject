@@ -1,8 +1,8 @@
-Code Book for Tidy Data Set
-===========================
+# Code Book for Tidy Data Set
 
-"variable" "description"
-------------------------
+## "variable" "description"
+
+## Note: All features variables are normalized and bounded within [-1,1] and using the original units of measurement.
 
 "Activity" "Activity description: Factor w/ 6 levels \"walking\", \"walking upstairs\", \"walking downstairs\", \"sitting\", \"stanting\", \"laying\""
 
