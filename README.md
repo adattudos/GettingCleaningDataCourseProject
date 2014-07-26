@@ -1,8 +1,8 @@
 GettingCleaningDataCourseProject
 ================================
 
-Course Project Repository for Getting and Cleaning Data.
-It is part of John Hopkins University Data Science Specialization on Coursera.
+Course Project Repository for Getting and Cleaning Data track which
+is part of John Hopkins University Data Science Specialization on Coursera.
 
 # Project Overview
 
@@ -65,11 +65,22 @@ Therefore the Tidy Data Set consitsts of the mean and standard deviation measure
 * 'README.md': This file
 * 'CodeBook.md': Shows information about the variables used in the Tidy Data Set.
 * 'run_analysis.R': R script which can reproduce tidy.txt step by step including comments.
-* 'tidy.txt': The Tidy Data Set exported to txt file with write.table including header.
+* 'tidy.txt': The Tidy Data Set exported to txt file with write.table including header (uploaded to Coursera)
 
 ### Notes
 
 * Features are normalized and bounded within [-1,1].
+* Wide data form is used for the Tidy Data Set here
+* Variable names are based on the original input data set however pattern matching
+and replacement were used to make them more descriptive.
+* It is assumed that ALL measurements which contains "mean" or "std" in its name is relevant and therefore extracted (not only those that include mean() and std() at the end).
+
+### The run_analysis.R Script
+
+* The provided R Script can fully reproduce the Tidy Data Set from the Input Data Set
+* It follows the steps outlined in the Course Project description
+* It can download the Input Data Set for convenience if required
+* It includes a few check calculations for testing in comments
 
 ## References
 
