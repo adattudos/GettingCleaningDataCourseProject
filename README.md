@@ -48,25 +48,28 @@ For each record in the dataset it is provided:
 The Tidy Data Set has been created using run_analysis.R script by
 * Merging the training and the test sets to create one data set.
 * Extracting only the measurements on the mean and standard deviation for each measurement. 
-* Using descriptive activity names to name the activities in the data set
+* Using descriptive activity names to name the activities in the data set.
 * Appropriately labeling the data set with descriptive variable names. 
 * Creating the second, independent Tidy Data Set with the average of each variable for each activity and each subject. 
 
-Therefore the Tidy Data Set consitst of the mean and standard deviation measurement of the Human Activity Recognition Data Set aggregated for each activity and each subject using the mean function.
+Therefore the Tidy Data Set consitsts of the mean and standard deviation measurement of the Human Activity Recognition Data Set aggregated for each activity and each subject using the mean function.
 
 ### For each record it is provided:
 
-* Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-* Triaxial Angular velocity from the gyroscope. 
-* A 561-feature vector with time and frequency domain variables. 
-* Its activity label. 
-* An identifier of the subject who carried out the experiment.
+* Its activity description.
+* An identifier of the subject who carried out the experiments. 
+* A 86-feature vector aggregated mean values with time and frequency domain variables for mean and standard deviation measurements. 
 
 ### The Tidy Data Set includes the following files
 
 * 'README.md': This file
-* 'CodeBook.md': Shows information about the variables used on the feature vector.
-* 'run_analysis.R': R script which can reproduce tidy.txt step by step.
+* 'CodeBook.md': Shows information about the variables used in the Tidy Data Set.
+* 'run_analysis.R': R script which can reproduce tidy.txt step by step including comments.
+* 'tidy.txt': The Tidy Data Set exported to txt file with write.table including header.
+
+### Notes
+
+* Features are normalized and bounded within [-1,1].
 
 ## References
 
