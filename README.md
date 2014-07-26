@@ -12,16 +12,15 @@ The purpose of this project is to demonstrate my ability to collect,
 work with, and clean a data set. The goal is to prepare tidy data that can be
 used for later analysis.
 
-## The input data: Human Activity Recognition Using Smartphones Dataset
-
-* Source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+## The Input Data Set
+* Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 * Abstract: Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+* Source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 * Data Set Characteristics: Multivariate, Time-Series
 * Number of Instances: 10299
 * Number of Attributes: 561
 
-Data Set Information:
----------------------
+### Data Set Information
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -29,8 +28,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 Check the original README.txt file for further details about this dataset.
 
-Attribute Information:
-----------------------
+### Attribute Information
 
 For each record in the dataset it is provided: 
 * Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
@@ -38,3 +36,38 @@ For each record in the dataset it is provided:
 * A 561-feature vector with time and frequency domain variables. 
 * Its activity label. 
 * An identifier of the subject who carried out the experiment.
+
+## The Tidy Data Set
+
+* Abstract: Tidy Data Set based on the Human Activity Recognition Data Set processed as instructed in the Course Project description
+* Number of Instances: 180
+* Number of Attributes: 88
+
+### Data Set Information
+
+The Tidy Data Set has been created using run_analysis.R script by
+* Merging the training and the test sets to create one data set.
+* Extracting only the measurements on the mean and standard deviation for each measurement. 
+* Using descriptive activity names to name the activities in the data set
+* Appropriately labeling the data set with descriptive variable names. 
+* Creating the second, independent Tidy Data Set with the average of each variable for each activity and each subject. 
+
+Therefore the Tidy Data Set consitst of the mean and standard deviation measurement of the Human Activity Recognition Data Set aggregated for each activity and each subject using the mean function.
+
+### For each record it is provided:
+
+* Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+* Triaxial Angular velocity from the gyroscope. 
+* A 561-feature vector with time and frequency domain variables. 
+* Its activity label. 
+* An identifier of the subject who carried out the experiment.
+
+### The Tidy Data Set includes the following files
+
+* 'README.md': This file
+* 'CodeBook.md': Shows information about the variables used on the feature vector.
+* 'run_analysis.R': R script which can reproduce tidy.txt step by step.
+
+## References
+
+* Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
