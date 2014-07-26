@@ -105,7 +105,7 @@ write.table(tidy, file=tidyFile)
 
 #print(table(tidy$Subject, tidy$Activity))
 
-# Generate the CodeBook
+# Optionally generate the raw CodeBook
 
 #codebook <- data.frame(variable = names(tidy),
 #                       data.frame(description = as.character(names(tidy)),

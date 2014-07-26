@@ -81,7 +81,7 @@ and replacement were used to make them more descriptive.
 * It follows the steps outlined in the Course Project description
 * It can download the Input Data Set for convenience if required
 * It includes a few check calculations for testing in comments
-* It can also produce the CodeBook as exported by write.table
+* It can also produce the raw CodeBook as exported by write.table
 
 ## References
 
